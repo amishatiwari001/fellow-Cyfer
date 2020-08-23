@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Dashboard_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fellow Cyfer:Admin Panel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Adminhome.aspx"><span>Fellow</span>Cyfer</a>
+                <ul class="nav navbar-top-links navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <div class="profile-sidebar">
+            <div class="profile-userpic">
+                <img src="https://pngimage.net/wp-content/uploads/2018/05/admin-avatar-png-1.png" class="img-responsive" alt="">
+            </div>
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name">Hello! Admin</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="divider"></div>
+        <ul class="nav menu">
+            <li><a href="Adminhome.aspx"><em class="fa fa-home">&nbsp;</em> Admin Home</a></li>
+            <li class="parent "><a class="collapsed" aria-expanded="false" href="#sub-item-1" data-toggle="collapse">
+                <em class="fa fa-navicon">&nbsp;</em> Company <span class="icon pull-right collapsed" aria-expanded="false" href="#sub-item-1" data-toggle="collapse"><em class="fa fa-plus"></em></span>
+            </a>
+                <ul class="children collapse" id="sub-item-1" aria-expanded="false" style="height: 0px;">
+                    <li><a href="AddCompany.aspx">
+                        <span class="fa fa-arrow-right">&nbsp;</span> Add
+                    </a></li>
+                    <li><a href="CompanyManage.aspx">
+                        <span class="fa fa-arrow-right">&nbsp;</span> Manage
+                    </a></li>
+                </ul>
+            </li>
+            <li class="parent "><a class="collapsed" aria-expanded="false" href="#si1" data-toggle="collapse">
+                <em class="fa fa-briefcase">&nbsp;</em> Job Post <span class="icon pull-right collapsed" aria-expanded="false" href="#si1" data-toggle="collapse"><em class="fa fa-plus"></em></span>
+            </a>
+                <ul class="children collapse" id="si1" aria-expanded="false" style="height: 0px;">
+                    <li><a href="AddJobPost.aspx">
+                        <span class="fa fa-arrow-right">&nbsp;</span> Add New
+                    </a></li>
+                    <li><a href="CompanyManage.aspx">
+                        <span class="fa fa-arrow-right">&nbsp;</span> Manage
+                    </a></li>
+                </ul>
+            </li>
+            <li class="parent "><a class="collapsed" aria-expanded="false" href="#si2" data-toggle="collapse">
+                <em class="fa fa-users">&nbsp;</em> Employees <span class="icon pull-right collapsed" aria-expanded="false" href="#si2" data-toggle="collapse"><em class="fa fa-plus"></em></span>
+            </a>
+                <ul class="children collapse" id="si2" aria-expanded="false" style="height: 0px;">
+                    <li><a href="Employee.aspx">
+                        <span class="fa fa-arrow-right">&nbsp;</span> Add Employee Profile
+                    </a></li>
+                    <li><a href="ManageEmployee.aspx">
+                        <span class="fa fa-arrow-right">&nbsp;</span> Manage Employee
+                    </a></li>
+                </ul>
+            </li>
+            <li><a href="Notification.aspx"><em class="fa fa-bullhorn">&nbsp;</em> Send Notification</a></li>
+            <li><a href="NewJobRequest.aspx"><em class="fa fa-file-archive-o">&nbsp;</em> View New Job Request</a></li>
+
+            <li><a href="ViewReview.aspx"><em class="fa fa-comments">&nbsp;</em> view Reviews</a></li>
+
+            <li><a href="../Logout.aspx"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+        </ul>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

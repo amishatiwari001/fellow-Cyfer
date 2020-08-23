@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="00f8aa1f-39e9-466b-8c82-4f638d45dab6" absoluteBounds="0.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/Company1Table" />
+      <nestedChildShapes>
+        <elementListCompartment Id="511958b7-2073-47d4-951b-65f7d513b6ea" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="632c5198-823c-4bd7-8468-799bfc10022d" absoluteBounds="3.25, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesDataContext/AdminTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28cf3dd5-8af6-49a6-87fb-798c8be374fc" absoluteBounds="3.265, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="71e61ecf-025a-4f26-8224-64b438d148b9" absoluteBounds="5.75, 4.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataClassesDataContext/ContactTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f85dc4a7-c570-44b4-910e-95b8a6fb887f" absoluteBounds="5.765, 4.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1adb431b-f9ad-4da0-85d2-1db08d52aa44" absoluteBounds="0.75, 3.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClassesDataContext/CVTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a91e25d-7f39-4810-9dc3-566a70406a7a" absoluteBounds="0.76500000000000012, 3.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19cee99d-83b2-42fc-a4ac-6ff155556ce6" absoluteBounds="5.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataClassesDataContext/ITjobPostTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07f89639-b638-4931-a39b-531f31326da2" absoluteBounds="5.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6eca7970-1dcf-4268-947d-6e7d25a41ed1" absoluteBounds="3.25, 3.125, 2, 2.347801106770834">
+      <DataClassMoniker Name="/DataClassesDataContext/JobPostTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8f74d52-c805-42c5-8756-7491ac728136" absoluteBounds="3.2649999999999997, 3.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a56a55ff-928e-47ec-8502-1ec522f10a94" absoluteBounds="5.875, 2.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/EmployeeTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09bac247-db16-446c-8fa0-4792ac0992a9" absoluteBounds="5.89, 2.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.57774983723958); (5.875 : 2.57774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Company1Table/Company1Table_EmployeeTable" />
+      <nodes>
+        <classShapeMoniker Id="00f8aa1f-39e9-466b-8c82-4f638d45dab6" />
+        <classShapeMoniker Id="a56a55ff-928e-47ec-8502-1ec522f10a94" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
